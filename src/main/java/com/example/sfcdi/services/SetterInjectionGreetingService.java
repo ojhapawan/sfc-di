@@ -3,9 +3,11 @@ package com.example.sfcdi.services;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GreetingServiceImpl implements GreetingService {
+public class SetterInjectionGreetingService implements  GreetingService{
+
     @Override
     public String sayGreeting() {
-        return "Hello World";
+        return "Hello World - Setter";
     }
+
 }
