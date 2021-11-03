@@ -15,6 +15,8 @@ public class SfcDiApplication {
 
 		ApplicationContext ctx= SpringApplication.run(SfcDiApplication.class, args);
 
+		System.out.println("---------- Primary Bean -------------");
+
 		MyController myController=(MyController) ctx.getBean("myController");
 		System.out.println(myController.sayHello());
 
